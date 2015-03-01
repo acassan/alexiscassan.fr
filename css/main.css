@@ -1,0 +1,267 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+}
+
+.line {
+    position: relative;
+    clear: both;
+    width: 100%;
+    padding: 0 2%;
+}
+.line .col { float: left; margin-right: 25px; }
+
+header {
+    background-color: #ffffff;
+    border: 0;
+    color: #515862;
+    height: 50px;
+    border-bottom: 1px #d7d9da solid;
+    width: 100%;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    margin: 5px auto 0 auto;
+    width: 850px;
+}
+
+header ul > li {
+    float: left;
+    position: relative;
+    display: block;
+    width: 180px;
+    text-align: center;
+    height: 25px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+header li:not(:first-child) {
+    cursor: pointer;
+}
+
+header a {
+    color: #515862;
+    text-decoration:none;
+}
+
+header li:not(:first-child):hover {
+    background-color: #f98561;
+    border-radius: 15px;
+}
+
+header li:not(:first-child):hover a {
+    color: #ffebca;
+}
+
+.home {
+    position: relative;
+    border: 1px black solid;
+    background: #2e3e4f;
+}
+
+.home .background {
+    position: relative;
+    height: 491px;
+    width: 100%;
+    background: url('../img/home_top_background.png');
+    color: #cccece;
+}
+
+.home .background .presentation {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 24px;
+}
+
+.home .background .title {
+    font-size: 60px;
+}
+
+.home .background .text {
+    color: #f98561;
+}
+
+.home .background .software {
+    position: relative;
+    height: 110px;
+}
+
+.home .background .software img {
+    display: inline;
+    margin: 0 4%;
+}
+
+.home .background .learn-more {
+    float: right;
+    background: #f98561;
+    color: #ffebca;
+    border-radius: 15px;
+    padding: 5px 20px;
+    margin: 0 40px 0 0;
+    cursor: pointer;
+}
+
+.home .me {
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    color: #f98561;
+}
+
+table {
+    padding: 0 2%;
+    width: 100%;
+}
+
+table td {
+    vertical-align: top;
+}
+
+.skills {
+    position: relative;
+}
+
+.skills .title {
+    background-color: #2190c1;
+    border-radius: 5px;
+    padding: 5px 20px;
+    color: #ffffff;
+    font-weight: bold;
+    width: 25%;
+    text-align: center;
+    margin: 15px auto;
+    font-size: 22px;
+}
+
+.skills h3 {
+    background-color: #f2efef;
+    border-radius: 5px;
+    padding-left: 20%;
+}
+
+.skills h3 img {
+    vertical-align: sub;
+    margin-right: 10px;
+}
+
+.skills h3 span {
+    font-size: 26px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills li {
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding: 3px 0 3px 30px;
+    margin: .4em 0;
+}
+
+.skills li.symfony { background-image: url('../img/ico_symfony.png'); }
+.skills li.zend { background-image: url('../img/ico_zend.png'); }
+.skills li.phalcon { background-image: url('../img/ico_phalcon.png'); }
+.skills li.silex { background-image: url('../img/ico_silex.png'); }
+.skills li.jquery { background-image: url('../img/ico_jquery.png'); }
+.skills li.doctrine { background-image: url('../img/ico_doctrine.png'); }
+.skills li.propel { background-image: url('../img/ico_propel.png'); }
+.skills li.redis { background-image: url('../img/ico_jquery.png'); }
+/*.skills li.supervisord { background-image: url('../img/ico_jquery.png'); }*/
+.skills li.git { background-image: url('../img/ico_git.png'); }
+.skills li.svn { background-image: url('../img/ico_svn.png'); }
+.skills li.aws { background-image: url('../img/ico_aws.png'); }
+.skills li.mysql { background-image: url('../img/ico_mysql.png'); }
+.skills li.postgresql { background-image: url('../img/ico_postgresql.png'); }
+.skills li.ubuntu { background-image: url('../img/ico_ubuntu.png'); }
+.skills li.debian { background-image: url('../img/ico_debian.png'); }
+.skills li.apache { background-image: url('../img/ico_apache.png'); }
+.skills li.nginx { background-image: url('../img/ico_nginx.png'); }
+
+.experience {
+    position: relative;
+    border: 1px black solid;
+    background: #2e3e4f;
+    color: #ffffff;
+    height: 600px;
+}
+
+.experience .title {
+    background-color: #2190c1;
+    border-radius: 5px;
+    padding: 5px 20px;
+    color: #ffffff;
+    font-weight: bold;
+    width: 25%;
+    text-align: center;
+    margin: 15px auto;
+    font-size: 22px;
+}
+
+.experience .society {
+    position: relative;
+    width: 100%;
+    padding: 2%;
+}
+
+.experience .society img {
+    vertical-align: middle;
+}
+
+.experience .society .name {
+    color: #f98561;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 0.1em;
+    height: 60px;
+}
+
+.experience .society .name .sub {
+    font-size: 12px;
+    font-style: italic;
+    padding-left: 4%;
+}
+
+.experience .society .description {
+    position: relative;
+}
+
+.experience .society .description .col:first-child {
+    width: 10%;
+    min-width: 155px;
+}
+
+.experience .society .projects {
+    position: relative;
+    clear: both;
+}
+
+.experience .society .projects ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.experience .society .projects ul li img {
+    border: 1px black solid;
+}
+
+.experience .society .projects ul li {
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 0.1em;
+}
