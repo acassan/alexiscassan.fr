@@ -7,24 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alexis CASSAN</title>
     <link rel="shortcut icon" href="favicon.ico" />
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
 
-<header>
+<header id="top">
     <ul>
         <li>{{ Alexis CASSAN }}</li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 </header>
 
 <div class="container">
+    <div class="btn-top">
+        <a href="#top"><img src="img/arrow_top.svg" class="^" /></a>
+    </div>
     <div class="content">
-        <div class="home">
+        <div id="home" class="home">
             <div class="background">
                 <div class="presentation">
                     <div class="title">Alexis CASSAN <br />Développeur Web 2.0</div>
@@ -37,15 +39,15 @@
                         <img class="redis" src="img/home_top_redis.png" alt="Redis" />
                         <img class="zend" src="img/home_top_zend.png" alt="Zend" />
                     </div>
-                    <div class="learn-more">En savoir plus</div>
+                    <div class="learn-more"><a href="#skills">En savoir plus</a></div>
                 </div>
             </div>
-            <div class="me">
+            <div id="about" class="me">
                 <p>Issu d'un Master en Gestion d'entreprise & projet et passioné par le monde web depuis toujours, j’ai orienté l’ensemble de mes choix afin de faire de ma passion ma profession.</p>
                 <p>En recherche sans relache de nouveaux challenges et défis dans l'ensemble des domaines, j'affine mes compétences et ne manque aucune occasion de partager mes connaissances.</p>
             </div>
         </div>
-        <div class="skills">
+        <div id="skills" class="skills">
             <div class="title">Compétences et savoir faire</div>
             <table>
                 <tr>
@@ -58,6 +60,7 @@
                             <li class="phalcon"><b>Phalcon PHP (Apprentissage)</b><br /><i>Création et maintenance d'un site à faible trafic</i></li>
                             <li class="silex"><b>Silex</b><br /><i>Utilisation dans le cadre de projets personel</i></li>
                             <li class="jquery"><b>jQuery (5 ans)</b></li>
+                            <li class=""><b>AngularJS (Apprentissage)</b></li>
                         </ul>
                     </td>
                     <td>
@@ -97,9 +100,9 @@
         <div class="experience">
             <div class="title">Expérience profesionnelle</div>
 
-            <div class="society">
+            <article class="society">
                 <div class="name">
-                    <img src="img/society_francepari.png" alt="France Pari" />
+                    <img class="logo" src="img/society_francepari.png" alt="France Pari" />
                     France Pari (Depuis Septembre 2014) <br />
                     <span class="sub">Opérateur de pari sportif & Fournisseur de plateforme de pari sportif</span>
                 </div>
@@ -110,7 +113,11 @@
                     </div>
                     <div class="line">
                         <div class="col">Environnement:</div>
-                        <div class="col">Ubuntu, PHP 5.6, svn</div>
+                        <div class="col">Ubuntu, PHP 5.6, svn, Zend1, Symfony2</div>
+                    </div>
+                    <div class="line">
+                        <div class="col">Mission:</div>
+                        <div class="col">Creation et maintenance des plateformes de pari (frontend & backend)</div>
                     </div>
                 </div>
                 <div class="projects">
@@ -147,6 +154,110 @@
                         </li>
                     </ul>
                 </div>
+            </article>
+            <article class="society">
+                <div class="name">
+                    <img class="logo" src="img/society_webrivage.png" alt="Riverline" />
+                    Riverline/Webrivage (Janvier 2012 - Septembre 2014) <br />
+                    <span class="sub">Recrutements de leads, de trafic ciblé et de qualification de données.</span>
+                </div>
+                <div class="description">
+                    <div class="line">
+                        <div class="col">Poste occupé:</div>
+                        <div class="col">Développeur web</div>
+                    </div>
+                    <div class="line">
+                        <div class="col">Environnement:</div>
+                        <div class="col">Ubuntu, PHP 5.6, AWS, git, Symfony2, Silex</div>
+                    </div>
+                    <div class="line">
+                        <div class="col">Mission:</div>
+                        <div class="col">Creation et maintenance des campagnes de recrutement des leads (webservice, collecte, livraison, etc.)</div>
+                    </div>
+                </div>
+                <div class="projects">
+                    <ul>
+                        <li>
+                            <a href="http://www.webrivage.com" target="_blank">
+                                <p>Webrivage</p>
+                                <img src="img/screenshot_webrivage.png" alt="Webrivage" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.riverline.fr" target="_blank">
+                                <p>Riverline</p>
+                                <img src="img/screenshot_riverline.png" alt="Riverline" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="society">
+                <div class="name">
+                    <img class="logo" src="img/society_ankama.png" alt="Ankama" />
+                    Ankama Games (Février 2012 - Janvier 2012) <br />
+                    <span class="sub">Studio et éditeur de jeux vidéos</span>
+                </div>
+                <div class="description">
+                    <div class="line">
+                        <div class="col">Poste occupé:</div>
+                        <div class="col">(stage) Marketing International</div>
+                    </div>
+                    <div class="line">
+                        <div class="col">Mission:</div>
+                        <div class="col">Gestion des partenaires internationaux (Square Enix, Mail.ru, etc.) et liaison avec les départements techniques</div>
+                    </div>
+                </div>
+                <div class="projects">
+                    <ul>
+                        <li>
+                            <a href="http://www.ankama.com/fr" target="_blank">
+                                <p>Ankama</p>
+                                <img src="img/screenshot_ankama.png" alt="Ankama" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.wakfu.com/fr/mmorpg" target="_blank">
+                                <p>Wakfu</p>
+                                <img src="img/screenshot_wakfu.png" alt="Wakfu" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.dofus.com/fr" target="_blank">
+                                <p>Dofus</p>
+                                <img src="img/screenshot_dofus.png" alt="Dofus" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.krosmoz.com/fr" target="_blank">
+                                <p>Krosmoz</p>
+                                <img src="img/screenshot_krosmoz.png" alt="Dofus" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+        <div id="contact" class="contact">
+            <div class="title"><img src="img/mail.svg" />Formulaire de contact</div>
+            <div class="form">
+                 <form action="#" method="POST" enctype="multipart/form-data">
+                     <div class="line">
+                         <div class="col">Email:</div>
+                         <div class="col"><input type="email" name="email" /></div>
+                     </div>
+                     <div class="line">
+                         <div class="col">Prénom/Société:</div>
+                         <div class="col"><input type="text" name="society" /></div>
+                     </div>
+                     <div class="line">
+                         <div class="col">Message:</div>
+                         <div class="col"><textarea name="message"></textarea></div>
+                     </div>
+                     <div class="line">
+                         <input type="submit" value="Envoyer" />
+                     </div>
+                 </form>
             </div>
         </div>
     </div>

@@ -11,9 +11,22 @@ body {
     position: relative;
     clear: both;
     width: 100%;
-    padding: 0 2%;
+    padding: 5px 2%;
 }
 .line .col { float: left; margin-right: 25px; }
+
+.btn-top {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #515862;
+    z-index: 1000;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
 
 header {
     background-color: #ffffff;
@@ -104,11 +117,14 @@ header li:not(:first-child):hover a {
 .home .background .learn-more {
     float: right;
     background: #f98561;
-    color: #ffebca;
     border-radius: 15px;
     padding: 5px 20px;
     margin: 0 40px 0 0;
     cursor: pointer;
+}
+
+.home .background .learn-more a {
+    color: #ffebca;
 }
 
 .home .me {
@@ -131,7 +147,8 @@ table td {
     position: relative;
 }
 
-.skills .title {
+.skills .title,
+.contact .title {
     background-color: #2190c1;
     border-radius: 5px;
     padding: 5px 20px;
@@ -179,7 +196,6 @@ table td {
 .skills li.doctrine { background-image: url('../img/ico_doctrine.png'); }
 .skills li.propel { background-image: url('../img/ico_propel.png'); }
 .skills li.redis { background-image: url('../img/ico_jquery.png'); }
-/*.skills li.supervisord { background-image: url('../img/ico_jquery.png'); }*/
 .skills li.git { background-image: url('../img/ico_git.png'); }
 .skills li.svn { background-image: url('../img/ico_svn.png'); }
 .skills li.aws { background-image: url('../img/ico_aws.png'); }
@@ -195,7 +211,6 @@ table td {
     border: 1px black solid;
     background: #2e3e4f;
     color: #ffffff;
-    height: 600px;
 }
 
 .experience .title {
@@ -212,8 +227,10 @@ table td {
 
 .experience .society {
     position: relative;
-    width: 100%;
+    width: 96%;
     padding: 2%;
+    letter-spacing: 1px;
+    border: 1px #516c8c dotted;
 }
 
 .experience .society img {
@@ -236,11 +253,13 @@ table td {
 
 .experience .society .description {
     position: relative;
+    letter-spacing: 1px;
 }
 
 .experience .society .description .col:first-child {
     width: 10%;
     min-width: 155px;
+    text-decoration: underline;
 }
 
 .experience .society .projects {
@@ -251,7 +270,9 @@ table td {
 .experience .society .projects ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 50px 0 0 0;
+    display: table;
+    width: 100%;
 }
 
 .experience .society .projects ul li img {
@@ -259,9 +280,56 @@ table td {
 }
 
 .experience .society .projects ul li {
-    float: left;
     margin-right: 20px;
     text-align: center;
     font-size: 15px;
     line-height: 0.1em;
+    display: table-cell;
+}
+
+.experience .society .projects ul li a {
+    color: white;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.contact {
+    margin-bottom: 150px;
+}
+
+.contact .title img {
+    width: 25px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.contact .form {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.contact form .line {
+    padding: 20px;
+}
+
+.contact form .line .col {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.contact form .line .col:first-child {
+    width: 20%;
+}
+
+.contact form .line .col:nth-child(2){
+    width: 60%;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 80%;
+}
+
+.contact form textarea {
+    height: 200px;
 }
