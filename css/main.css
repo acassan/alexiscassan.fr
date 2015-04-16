@@ -128,10 +128,19 @@ header li:not(:first-child):hover a {
 }
 
 .home .me {
-    padding: 5px;
-    width: 100%;
-    text-align: center;
+    padding: 50px 10px;
+    width: 80%;
+    text-align: justify;
     color: #f98561;
+    margin: auto auto;
+}
+
+.home .me .profil {
+    float: left;
+    width: 80px;
+    height: auto;
+    margin-right: 50px;
+    border: 1px black dotted;
 }
 
 table {
@@ -145,6 +154,7 @@ table td {
 
 .skills {
     position: relative;
+    padding-top: 50px;
 }
 
 .skills .title,
@@ -211,6 +221,7 @@ table td {
     border: 1px black solid;
     background: #2e3e4f;
     color: #ffffff;
+    padding-top: 50px;
 }
 
 .experience .title {
@@ -294,6 +305,7 @@ table td {
 }
 
 .contact {
+    padding-top: 50px;
     margin-bottom: 150px;
 }
 
@@ -332,4 +344,43 @@ table td {
 
 .contact form textarea {
     height: 200px;
+}
+
+.contact input[type=submit] {
+    border: 1px solid #447314;
+    background: #6aa436;
+    background: -webkit-gradient(linear, left top, left bottom, from(#8dc059), to(#6aa436));
+    background: -webkit-linear-gradient(top, #8dc059, #6aa436);
+    background: -moz-linear-gradient(top, #8dc059, #6aa436);
+    background: -ms-linear-gradient(top, #8dc059, #6aa436);
+    background: -o-linear-gradient(top, #8dc059, #6aa436);
+    background-image: -ms-linear-gradient(top, #8dc059 0%, #6aa436 100%);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    text-shadow: #addc7e 0 1px 0;
+    color: #31540c;
+    font-family: helvetica, serif;
+    padding: 8px 18px;
+    text-decoration: none;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.contact input[type=submit]:hover {
+    border: 1px solid #447314;
+    text-shadow: #31540c 0 1px 0;
+    background: #6aa436;
+    background: -webkit-gradient(linear, left top, left bottom, from(#8dc059), to(#6aa436));
+    background: -webkit-linear-gradient(top, #8dc059, #6aa436);
+    background: -moz-linear-gradient(top, #8dc059, #6aa436);
+    background: -ms-linear-gradient(top, #8dc059, #6aa436);
+    background: -o-linear-gradient(top, #8dc059, #6aa436);
+    background-image: -ms-linear-gradient(top, #8dc059 0%, #6aa436 100%);
+    color: #fff;
 }

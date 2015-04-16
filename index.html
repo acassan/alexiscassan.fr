@@ -14,7 +14,7 @@
 
 <header id="top">
     <ul>
-        <li>{{ Alexis CASSAN }}</li>
+        <li><a href="index.html">{{ Alexis CASSAN }}</a></li>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -43,8 +43,16 @@
                 </div>
             </div>
             <div id="about" class="me">
-                <p>Issu d'un Master en Gestion d'entreprise & projet et passioné par le monde web depuis toujours, j’ai orienté l’ensemble de mes choix afin de faire de ma passion ma profession.</p>
-                <p>En recherche sans relache de nouveaux challenges et défis dans l'ensemble des domaines, j'affine mes compétences et ne manque aucune occasion de partager mes connaissances.</p>
+                <img class="profil" src="img/profil.jpg" alt="" />
+                <p>
+                    Issu d'un Master en Gestion d'entreprise (IFAG), passioné par le management et le web sous toutes ses formes, j'ai d'abord suivi un cursus en informatique
+                    industrielle et management avant de me spécialiser dans le web.
+                    Depuis très longtemps auto entrepreneur dans le milieu du web et des jeux par navigateurs, aujourd'hui je mélange mon travail et ma passion.
+                </p>
+                <p>
+                    En recherche sans relache de nouveaux challenges et défis dans l'ensemble des domaines, j'affine mes compétences et ne manque aucune occasion
+                    de partager mes connaissances. N'hésitez pas à me contacter pour toute aide ou demande de projet.
+                </p>
             </div>
         </div>
         <div id="skills" class="skills">
@@ -241,18 +249,18 @@
         <div id="contact" class="contact">
             <div class="title"><img src="img/mail.svg" />Formulaire de contact</div>
             <div class="form">
-                 <form action="#" method="POST" enctype="multipart/form-data">
+                 <form action="sendMail.php" method="POST" enctype="multipart/form-data">
                      <div class="line">
-                         <div class="col">Email:</div>
-                         <div class="col"><input type="email" name="email" /></div>
+                         <div class="col"><label for="email">Email:</label></div>
+                         <div class="col"><input type="email" name="email" id="email" /></div>
                      </div>
                      <div class="line">
-                         <div class="col">Prénom/Société:</div>
-                         <div class="col"><input type="text" name="society" /></div>
+                         <div class="col"><label for="society">Prénom/Société:</label></div>
+                         <div class="col"><input type="text" name="society" id="society" /></div>
                      </div>
                      <div class="line">
-                         <div class="col">Message:</div>
-                         <div class="col"><textarea name="message"></textarea></div>
+                         <div class="col"><label for="message">Message:</label></div>
+                         <div class="col"><textarea name="message" id="message"></textarea></div>
                      </div>
                      <div class="line">
                          <input type="submit" value="Envoyer" />
